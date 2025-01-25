@@ -48,19 +48,8 @@ A modern and responsive personal portfolio website built with HTML, CSS, and Jav
 
 1. Clone the repository:
 2. Navigate to project directory: cd portfolio
+3. Open the Live Server
 
-## File Structure
-
-portfolio/
-  ├── assets/
-  │   ├── css/
-  │   │   └── style.css
-  │   ├── images/
-  │   │   └── ...
-  │   └── js/
-  │       └── script.js
-  ├── index.html
-  └── README.md
 
 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
