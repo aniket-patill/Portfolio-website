@@ -1,6 +1,13 @@
 'use strict';
 
 
+// Loading screen
+window.addEventListener('load', () => {
+  const loadingScreen = document.querySelector('.loading-screen');
+  setTimeout(() => {
+    loadingScreen.classList.add('hidden');
+  }, 1500);
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
