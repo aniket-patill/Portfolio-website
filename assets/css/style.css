@@ -149,6 +149,53 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s;
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--orange-yellow-crayola);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.4s;
+  opacity: 0.5;
+}
+
+/* Hover effects */
+.cursor.active {
+  transform: scale(1.5);
+}
+
+.cursor-follower.active {
+  transform: scale(0.7);
+}
+
+/* Hide default cursor */
+* {
+  cursor: none;
+}
+
+/* Show default cursor on touch devices */
+@media (hover: none) {
+  .cursor, .cursor-follower {
+    display: none;
+  }
+  * {
+    cursor: auto;
+  }
+}
 
 /* Loading Screen */
 .loading-screen {
