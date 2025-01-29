@@ -437,6 +437,15 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  
+}
+
+.avatar-box img{
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+ 
 }
 
 
